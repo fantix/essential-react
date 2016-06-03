@@ -11,15 +11,18 @@ import ReactDOM from 'react-dom';
 import { Router, browserHistory, applyRouterMiddleware } from 'react-router';
 
 // Routes
-import Routes from './common/components/Routes';
+import Routes from './common/Routes';
 
 // Relay
 import Relay from 'react-relay';
 import useRelay from 'react-router-relay';
 
-// Base styling
-import './common/base.css';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
+// Needed for onTouchTap
+// Check this repo:
+// https://github.com/zilverline/react-tap-event-plugin
+injectTapEventPlugin();
 
 // ID of the DOM element to mount app on
 const DOM_APP_EL_ID = 'app';

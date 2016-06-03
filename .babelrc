@@ -5,7 +5,7 @@
     "stage-0"
   ],
   "plugins": [
-    "./src/babelRelayPlugin",
+    "./src/common/babelRelayPlugin",
     "transform-runtime"
   ]
 }
